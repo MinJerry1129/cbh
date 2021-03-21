@@ -1,6 +1,16 @@
 {
   "/_app": "pages/_app.js",
+  "/all/main/main": "pages/all/main/main.html",
+  "/all/menu/commercial": "pages/all/menu/commercial.html",
+  "/all/menu/edmonton": "pages/all/menu/edmonton.html",
+  "/all/menu/mortgage": "pages/all/menu/mortgage.html",
+  "/all/menu/seller": "pages/all/menu/seller.html",
+  "/api/hello": "pages/api/hello.js",
+  "/components/header": "pages/components/header.html",
+  "/components/mainmenu1": "pages/components/mainmenu1.html",
+  "/components/topbar": "pages/components/topbar.html",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
