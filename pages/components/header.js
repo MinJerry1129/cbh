@@ -1,21 +1,29 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../../styles/Home.module.scss'
+import styles from '../../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import TopBar from './topbar'
 import MainMenu from './mainmenu1'
+import Nav from './nav';
+import Image from 'next/image'
 
 function Header() {
     const router = useRouter()
     return (
-        <div className={styles.header}>
+        <div className={"header"}>
             <Head>
             <title>Next</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <div className={styles.container}>
-                <div className={styles.nav}>
-                    <div className={styles.primary}>
+            <div className={"nav_menu"}>
+                <Nav />
+                <div className={"nav_logo"}>
+                    <img src="/logo.png" width={100} height={100} />
+                </div>
+            </div>
+            <div className={"container mainmenu"}>
+                <div className={"nav"}>
+                    <div className={"primary"}>
                         <Link href="/">
                             <a className={router.pathname == "/" ? styles.nav_link + " " + styles.nav_link_active : styles.nav_link}>Calgary Area Real estate</a>
                         </Link>
@@ -32,7 +40,7 @@ function Header() {
                             <a className={router.pathname == "/all/menu/commercial" ? styles.nav_link + " " + styles.nav_link_active : styles.nav_link}>Commercial</a>
                         </Link>
                     </div>
-                    <div className={styles.secondary}>
+                    <div className={"secondary"}>
                         <Link href="/">
                             <a className={styles.nav_link}>Special Offers</a>
                         </Link>

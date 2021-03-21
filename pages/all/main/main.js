@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Children } from 'react'
-import styles from '../../../styles/Home.module.scss'
+import styles from '../../../styles/Home.module.css'
 
 const Mainbody = ({ bodyText, ...props }) => {
   return (

@@ -14,3 +14,176 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  background-color: #f2f3f2;
+}
+
+.main_menu {
+  background-color: #af0b1c;
+}
+
+.main_nav {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.main_nav_link {
+  border-right: 1px solid #860715;
+  height: 100%;
+  padding: 18px 15px;
+  font-size: 17px;
+  color: #fff;
+  border-top: 1px solid #860715;
+}
+
+.main_nav_link:first-child {
+  border-left: 1px solid #860715;
+}
+
+.main_nav_link:hover {
+  background-color: #dedede;
+  border-top: 1px solid #af0b1c;
+  color: #af0b1c;
+}
+
+.logo {
+  width: 100%;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.nav {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.nav_logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.secondary {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/*Below Styles for the burger menu*/
+.bm-burger-button {
+  position: fixed;
+    width: 25px;
+    height: 20px;
+    left: 26px;
+    top: 40px;
+  }
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+  background: #373a47;
+  height: 15%;
+  }
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+  background: #a90000;
+  }
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+  height: 24px;
+  width: 24px;
+  }
+  /* Color/shape of close button cross */
+  .bm-cross {
+  background: #000000;
+  }
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  background-color: #f2f3f2;
+  }
+  /* General sidebar styles */
+  .bm-menu {
+  padding: 2.5em 0 0;
+  font-size: 1.15em;
+  }
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+  fill: #373a47;
+  }
+  /* Wrapper for item list */
+  .bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em 0;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .nav_parent {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav_item {
+    border-bottom: 1px solid #c3c3c3;
+    position: relative;
+    height: 50px;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_item a {
+    font-size: 14px;
+    padding: 18px 26px;
+    width: 100%;
+  }
+
+  @media (max-width: 850px) {
+    .nav_menu {
+      display: block;
+    }
+    .mainmenu, .main_menu, .main_logo {
+      display: none;
+    }
+  }
+
+  @media (min-width: 851px) {
+    .nav_menu {
+      display: none;
+    }
+    .mainmenu, .main_menu, .main_logo {
+      display: flex;
+    }
+  }
