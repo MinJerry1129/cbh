@@ -5,10 +5,6 @@ import styles from '../../styles/Home.module.scss'
 function MainMenu1() {
     return (
       <div className={styles.main_menu}>
-        <Head>
-          <title>Next</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
         <div className={styles.container}>
             <div className={styles.main_nav}>
                 <Link href="/">
