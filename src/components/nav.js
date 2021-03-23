@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { slide as Menu } from "react-burger-menu";
-import styled from '../../styles/Home.module.css'
 import React, { Component } from 'react';
 
 
@@ -26,28 +25,27 @@ class Nav extends React.Component {
                 <Menu noOverlay width={'85%'}
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}>
-                    <ul class={"nav_parent"}>
-                        <li class={"has-submenu nav_item"}>
-                            <a href="/">Calgary Area Real estate</a>
+                    <ul className={"nav_parent"}>
+                        <li className={"has-submenu nav_item"}>
+                            <Link href="/">Calgary Area Real estate</Link>
                         </li>
-                        <li class={"has-submenu nav_item"}>
-                            <a href="/all/menu/edmonton">Edmonton area real estate</a>
+                        <li className={"has-submenu nav_item"}>
+                            <Link href="/edmonton-area">Edmonton area real estate</Link>
                         </li>
-                        <li class={"has-submenu nav_item"}>
-                            <a href="/all/menu/seller">Seller</a>
+                        <li className={"has-submenu nav_item"}>
+                            <Link href="/sellers">Seller</Link>
                         </li>
-                        <li class={"has-submenu nav_item"}>
-                            <a href="/all/menu/mortgage">Mortgage</a>
+                        <li className={"has-submenu nav_item"}>
+                            <Link href="/mortgage">Mortgage</Link>
                         </li>
-                        <li class={"has-submenu nav_item"}>
-                            <a href="/all/menu/commercial">Commercial</a>
+                        <li className={"has-submenu nav_item"}>
+                            <Link href="/commercial">Commercial</Link>
                         </li>
                     </ul>
                 </Menu>
             </div>
         )
     }
-
 }
 
 export default Nav;

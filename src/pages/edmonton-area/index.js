@@ -1,6 +1,6 @@
 import Header from '../../components/header'
-import MainMenu from '../../components/mainmenu1'
-import BodyText from '../main/main'
+import MainMenu from '../../components/mainmenu'
+import BodyText from '../all/main/main'
 import TopBar from '../../components/topbar'
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Header></Header>
       <TopBar></TopBar>
       <MainMenu></MainMenu>
-      <BodyText bodyText="This is commercial page"></BodyText>
+      <BodyText bodyText="This is edmonton page"></BodyText>
     </div>
   )
 }

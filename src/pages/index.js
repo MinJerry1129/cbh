@@ -1,7 +1,7 @@
-import Header from './components/header'
-import MainMenu from './components/mainmenu1'
+import Header from '../components/header'
+import MainMenu from '../components/mainmenu'
 import BodyText from './all/main/main'
-import TopBar from './components/topbar'
+import TopBar from '../components/topbar'
 
 export default function Home() {
   return (
